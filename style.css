@@ -22,7 +22,17 @@
   display: flex;
 } */
 
+@media only screen and (max-width: 768px) {
+  .name {
+    padding-top: 10rem;
+  }
+}
 
+@media only screen and (min-width: 768px) {
+  .name {
+    padding-top: 0;
+  }
+}
 
 .intro{
   font-family: "Montserrat", sans-serif;
@@ -55,8 +65,8 @@
 
 .last{
   font-weight: 700;
-  font-size: 4rem;
-  margin-bottom: -1.9rem;
+  font-size: 3rem;
+  margin-bottom: -1.5rem;
 }
 
 .txt{
