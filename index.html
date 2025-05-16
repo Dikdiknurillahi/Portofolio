@@ -21,8 +21,8 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+          </button>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link text-white" aria-current="page" href="#">Home</a>
@@ -39,49 +39,47 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="#project">Project</a>
             </li>
+            <li>
+              <a class="nav-link text-white" href="#contact">Contact Me</a>
+            </li>
           </ul>
-        </div>
-        <div>
-          <a class="nav-link text-white" href="#contact">Contact Me</a>
         </div>
       </div>
       </nav>
   </header>
 
   <main>
-    <div id="head" class="jumbo">
-      <div class="intro">
+    <div id="head" class="d-flex intro ">
+      <div class="container align-content-center ">
         <!-- <p>POR <br> TFO <br> LIO</p> -->
-        <div class="name">
+        <div class="name text-white">
           <p class="first">DIKDIK</p>
           <p class="last">NUR ILLAHI</p>
           <p class="txt">Fresh Graduate | Web Developer</p>
         </div>
       </div>
-      <img class="img" src="img/IMG_4503.PNG" alt="">
+        <!-- <img class="object-fit-cover img" src="img/IMG_4503.PNG" alt=""> -->
     </div>
 
-    <div id="about" class="container ">
-      <h1 class="bold">About Me</h1>
-      <div class="d-flex justify-content-around">
-        <div class="about ">
-          <article>A Bachelor's graduate in Informatics Engineering from Universitas Pasundan. Possesses strong communication skills, the
-          ability to work well in a team, understanding of programming logic. Proficient in the fundamentals of
-          programming languages and frameworks. Persistent, solution-oriented, and enthusiastic about learning new things.</article>
+<div id="about" class="container ">
+      <h1 class="bold pt-5">About Me</h1>
+      <div class="d-flex flex-column flex-xl-row justify-content-xl-around">
+        <div class="about mb-3">
+          <article >A Bachelor's graduate in Informatics Engineering from Universitas Pasundan. Possesses strong communication skills, the ability to work well in a team, understanding of programming logic. Proficient in the fundamentals of programming languages and frameworks. Persistent, solution-oriented, and enthusiastic about learning new things.</article>
         </div>
-        <aside>
-          <img class="imgabout" src="img/IMG_8391.JPG" alt="">
+        <div class="d-sm-flex gap-3">
+          <img class="imgabout mb-3" src="img/IMG_8391.JPG" alt="">
           <img class="imgabout2" src="img/crop.jpg" alt="">
-        </aside>
+        </div>
 
       </div>
     </div>
 
     <div id="education" class="container">
       <div>
-        <h3 class="bold">Education</h3>
+        <h3 class="bold pt-5">Education</h3>
       </div>
-      <div class="layout">
+      <div class="d-sm-flex justify-content-sm-around">
         <div class="card" style="width: 18rem; background: #141414 30%; color: white;">
           <img src="img/SMA.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -100,7 +98,7 @@
 
     <div id="skill" class="container">
       <div>
-        <h1 class="bold">Skill</h1>
+        <h1 class="bold pt-5">Skill</h1>
       </div>
       <div class="d-flex flex-wrap gap-3 ">
 
@@ -265,16 +263,17 @@
 
 <div id="project" class="container">
   <div>
-    <h1 class="bold">Project</h1>
+    <h1 class="bold pt-5">Project</h1>
   </div>
-  <div class="row gap-3 justify-content-between align-items-center">
 
-    <div class="col-5">
+
+  <div class="d-flex gap-3 mb-5 flex-column flex-lg-row">
+    <div class="align-self-center w-100 order-1 order-lg-0">
       <h3 class="text-white">Blog Post Vakantie</h3>
-      <p class="text-white">This blog post website is built using Laravel framework and Tailwind CSS. </p>
+      <p class="text-white text-break">This blog post website is built using Laravel framework and Tailwind CSS.</p>
     </div>
-    <div id="hero-carosel" class="carousel slide mb-5 col">
-      <div class="carousel-inner" style="width: 45rem;">
+    <div id="hero-carosel" class="carousel slide">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/vakantie1.png" class="d-block w-100" alt="...">
         </div>
@@ -300,9 +299,15 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+  </div>
 
-    <div id="hero-carosel2" class="carousel slide mb-5 col">
-      <div class="carousel-inner" style="width: 45rem;">
+  <div class="d-flex gap-3 mb-5 flex-column flex-lg-row">
+    <div class="align-self-center w-100 order-1 order-lg-0">
+      <h3 class="text-white">Employee Payroll Website</h3>
+      <p class="text-white">This Employee Payroll website is built using Laravel framework and Tailwind CSS.</p>
+    </div>
+    <div id="hero-carosel2" class="carousel slide">
+      <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/gaji.png" class="d-block w-100" alt="...">
         </div>
@@ -328,40 +333,40 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="col-5">
-      <h3 class="text-white">Employee Payroll Website</h3>
-      <p class="text-white">This Employee Payroll website is built using Laravel framework and Tailwind CSS.</p>
-    </div>
+  </div>
 
-<div class="col-5">
-  <h3 class="text-white">Static Website</h3>
-  <p class="text-white">This Static website is built using Bootstrap. </p>
-  <a href="https://itsyournaraka.github.io/Upload_Tugas_besar/" target="_blank"><button type="button" class="btn btn-primary">Link</button></a>
-</div>
-<div id="hero-carosel3" class="carousel slide mb-5 col">
-  <div class="carousel-inner" style="width: 45rem;">
-    <div class="carousel-item active">
-      <img src="img/wrh1.png" class="d-block w-100" alt="...">
+  
+  <div class="d-flex gap-3 flex-column flex-lg-row">
+    <div class="align-self-center w-100 order-1 order-lg-0">
+      <h3 class="text-white">Static Website</h3>
+      <p class="text-white">This Static website is built using Bootstrap. </p>
+      <a href="https://itsyournaraka.github.io/Upload_Tugas_besar/" target="_blank"><button type="button" class="btn btn-primary">Link</button></a>
     </div>
-    <div class="carousel-item ">
-      <img src="img/wrh2.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item ">
-      <img src="img/wrh3.png" class="d-block w-100" alt="...">
+    <div id="hero-carosel3" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/wrh1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img src="img/wrh2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img src="img/wrh3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero-carosel3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero-carosel3" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#hero-carosel3" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#hero-carosel3" data-bs-slide="next">
-    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 
-  </div>
+
 </div>
 
 
@@ -369,7 +374,7 @@
 
   <footer id="contact" class="bg">
     <div class="container">
-      <h1 class="bold">Contact Me</h1>
+      <h1 class="bold pt-5">Contact Me</h1>
       <div class="d-inline-flex flex-column gap-3">
 
         <a href="mailto:dikdiknurillahi2@gmail.com" target="_blank" class="text-decoration-none">
@@ -378,7 +383,7 @@
           style="fill:#FFFFFF;">
           <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M12,23.403v-0.013v-13.001l-0.12,-0.089h-0.01l-2.73,-2.02c-1.67,-1.24 -4.05,-1.18 -5.53,0.28c-0.99,0.98 -1.61,2.34 -1.61,3.85v3.602zM38,23.39v0.013l10,-7.391v-3.602c0,-1.49 -0.6,-2.85 -1.58,-3.83c-1.46,-1.457 -3.765,-1.628 -5.424,-0.403l-2.876,2.123l-0.12,0.089zM14,24.868l10.406,7.692c0.353,0.261 0.836,0.261 1.189,0l10.405,-7.692v-13.001l-11,8.133l-11,-8.133zM38,25.889v15.111c0,0.552 0.448,1 1,1h6.5c1.381,0 2.5,-1.119 2.5,-2.5v-21.003zM12,25.889l-10,-7.392v21.003c0,1.381 1.119,2.5 2.5,2.5h6.5c0.552,0 1,-0.448 1,-1z"></path></g></g>
           </svg>
-            <h4 class="text-white mx-3">dikdiknurillahi2@gmail.com</h4>
+            <p class="text-white mx-3">dikdiknurillahi2@gmail.com</p>
           </div>
         </a>
 
@@ -396,7 +401,7 @@
                   </g>
                 </g>
               </svg>
-              <h4 class="text-white mx-3">dikdiknurillahi204</h4>
+              <p class="text-white mx-3">dikdiknurillahi204</p>
             </div>
           </a>
 
@@ -405,7 +410,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0,0,256,256" style="fill:#FFFFFF;">
                 <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M10.9,2.1c-4.6,0.5 -8.3,4.2 -8.8,8.7c-0.5,4.7 2.2,8.9 6.3,10.5c0.3,0.1 0.6,-0.1 0.6,-0.5v-1.6c0,0 -0.4,0.1 -0.9,0.1c-1.4,0 -2,-1.2 -2.1,-1.9c-0.1,-0.4 -0.3,-0.7 -0.6,-1c-0.3,-0.1 -0.4,-0.1 -0.4,-0.2c0,-0.2 0.3,-0.2 0.4,-0.2c0.6,0 1.1,0.7 1.3,1c0.5,0.8 1.1,1 1.4,1c0.4,0 0.7,-0.1 0.9,-0.2c0.1,-0.7 0.4,-1.4 1,-1.8c-2.3,-0.5 -4,-1.8 -4,-4c0,-1.1 0.5,-2.2 1.2,-3c-0.1,-0.2 -0.2,-0.7 -0.2,-1.4c0,-0.4 0,-1 0.3,-1.6c0,0 1.4,0 2.8,1.3c0.5,-0.2 1.2,-0.3 1.9,-0.3c0.7,0 1.4,0.1 2,0.3c1.3,-1.3 2.8,-1.3 2.8,-1.3c0.2,0.6 0.2,1.2 0.2,1.6c0,0.8 -0.1,1.2 -0.2,1.4c0.7,0.8 1.2,1.8 1.2,3c0,2.2 -1.7,3.5 -4,4c0.6,0.5 1,1.4 1,2.3v2.6c0,0.3 0.3,0.6 0.7,0.5c3.7,-1.5 6.3,-5.1 6.3,-9.3c0,-6 -5.1,-10.7 -11.1,-10z"></path></g></g>
               </svg>
-              <h4 class="text-white mx-3">Dikdiknurillahi</h4>
+              <p class="text-white mx-3">Dikdiknurillahi</p>
             </div>
           </a>
         </div>
