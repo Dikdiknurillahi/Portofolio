@@ -28,24 +28,31 @@
         <div class="collapse navbar-collapse d-lg-flex justify-content-lg-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+              <a class="nav-link text-white" id="hm" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-white" href="#about">About Me</a>
+              <a class="nav-link text-white" id="changeAbout" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#education">Education</a>
+              <a class="nav-link text-white" id="changeEdu" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#skill">Skill</a>
+              <a class="nav-link text-white" id="changeSkil" href="#skill">Skill</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#project">Project</a>
+              <a class="nav-link text-white" id="changePro" href="#project">Project</a>
             </li>
             <li>
-              <a class="nav-link text-white" href="#contact">Contact Me</a>
+              <a class="nav-link text-white" id="changeHub" href="#contact">Contact Me</a>
             </li>
           </ul>
+          <div class="ms-auto">
+
+            <select id="lang" class="form-select bg-transparent text-white border-0" >
+              <option class="text-black" value="en" selected>English</option>
+              <option class="text-black" value="id">Indonesia</option>  
+            </select>
+          </div>
         </div>
       </div>
       </nav>
@@ -65,16 +72,16 @@
     </div>
 
 <div id="about" class="container ">
-      <h1 class="bold pt-5">About Me</h1>
+      <h1 id="changeAbout" class="bold pt-5 en">About Me</h1>
       <div class="d-flex flex-column flex-xl-row justify-content-xl-around">
         <div class="about mb-3">
-          <article >A Bachelor's graduate in Informatics Engineering from Universitas Pasundan. Possesses strong communication skills, the ability to work well in a team, understanding of programming logic. Proficient in the fundamentals of programming languages and frameworks. Persistent, solution-oriented, and enthusiastic about learning new things.</article>
+          <article id="desk" class="px-3">A Bachelor's graduate in Informatics Engineering from Universitas Pasundan. Possesses strong communication skills, the ability to work well in a team, understanding of programming logic. Proficient in the fundamentals of programming languages and frameworks. Persistent, solution-oriented, and enthusiastic about learning new things.</article>
         </div>
         <div class="d-sm-flex gap-3">
           <!-- <img class="imgabout mb-3" src="img/IMG_8391.JPG" alt=""> -->
           <img class="imgabout mb-3" src="img/sea.png" alt="">
           <!-- <img class="imgabout2" src="img/crop.jpg" alt=""> -->
-          <img class="imgabout2" src="img/sdiang2.jpg" alt="">
+          <img class="imgabout2" src="img/HKL_0541.JPG" alt="">
         </div>
 
       </div>
@@ -82,7 +89,7 @@
 
     <div id="education" class="container">
       <div>
-        <h3 class="bold pt-5">Education</h3>
+        <h3 id="changeEdu" class="bold pt-5">Education</h3>
       </div>
       <div class="d-sm-flex justify-content-sm-around">
         <div class="card" style="width: 18rem; background: #141414 30%; color: white;">
@@ -94,7 +101,7 @@
         <div class="card" style="width: 18rem; background: #141414; color: white;">
           <img src="img/unpas.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text">2020 - 2024 <br> Universitas Pasundan <br> Teknik Informatika <br> IPK 3.66</p>
+            <p class="card-text">2020 - 2024 <br> Universitas Pasundan <br> <span class="text-capitalize" id="changejur">informatics engineering</span>  <br> <span id="changegpa">GPA</span>  3.66</p>
           </div>
         </div>
       </div>
@@ -103,7 +110,7 @@
 
     <div id="skill" class="container">
       <div>
-        <h1 class="bold pt-5">Skill</h1>
+        <h1 id="changeSkil" class="bold pt-5">Skill</h1>
       </div>
       <div class="d-flex flex-wrap gap-3 ">
 
@@ -268,14 +275,14 @@
 
 <div id="project" class="container">
   <div>
-    <h1 class="bold pt-5">Project</h1>
+    <h1 id="changePro" class="bold pt-5">Project</h1>
   </div>
 
 
   <div class="d-flex gap-3 mb-5 flex-column flex-lg-row">
     <div class="align-self-center w-100 order-1 order-lg-0">
-      <h3 class="text-white">Blog Post Vakantie</h3>
-      <p class="text-white text-break">This blog post website is built using Laravel framework and Tailwind CSS.</p>
+      <h3 id="proHead" class="text-white">Vakantie Tourism Blog Post</h3>
+      <p id="proBody" class="text-white">This blog post website was built using the Laravel and Tailwind frameworks. It is one of the college assignments I created for the Programming Practicum course.</p>
     </div>
     <div id="hero-carosel" class="carousel slide">
       <div class="carousel-inner">
@@ -308,8 +315,9 @@
 
   <div class="d-flex gap-3 mb-5 flex-column flex-lg-row">
     <div class="align-self-center w-100 order-1 order-lg-0">
-      <h3 class="text-white">Employee Payroll Website</h3>
-      <p class="text-white">This Employee Payroll website is built using Laravel framework and Tailwind CSS.</p>
+      <h3 id="proHead" class="text-white">Payroll Website for PT Wahana Baja Gemilang</h3>
+      <p id="proBody" class="text-white">This payroll website was built using the Laravel and Tailwind frameworks. It is my final project. The website calculates
+      employee working hours and processes payroll by inputting check-in and check-out times.</p>
     </div>
     <div id="hero-carosel2" class="carousel slide">
       <div class="carousel-inner">
@@ -343,8 +351,8 @@
   
   <div class="d-flex gap-3 flex-column flex-lg-row">
     <div class="align-self-center w-100 order-1 order-lg-0">
-      <h3 class="text-white">Static Website</h3>
-      <p class="text-white">This Static website is built using Bootstrap. </p>
+      <h3 id="proHead" class="text-white">Esports Profile Website</h3>
+      <p id="proBody" class="text-white">This website was built using the Bootstrap framework. It is one of my college assignments. </p>
       <a href="https://itsyournaraka.github.io/Upload_Tugas_besar/" target="_blank"><button type="button" class="btn btn-primary">Link</button></a>
     </div>
     <div id="hero-carosel3" class="carousel slide">
@@ -379,7 +387,7 @@
 
   <footer id="contact" class="bg">
     <div class="container">
-      <h1 class="bold pt-5">Contact Me</h1>
+      <h1 id="changeHub" class="bold pt-5">Contact Me</h1>
       <div class="d-inline-flex flex-column gap-3">
 
         <a href="mailto:dikdiknurillahi2@gmail.com" target="_blank" class="text-decoration-none">
@@ -421,7 +429,7 @@
         </div>
       </div>
       <div class="d-flex justify-content-center pt-3">
-        <p class="text-white">This Website made by Dik Dik Nur Illahi Using Bootstrap</p>
+        <p id="footer" class="text-white">This Website portfolio made by Dik Dik Nur Illahi Using framework Bootstrap</p>
       </div>
   </footer>
 
