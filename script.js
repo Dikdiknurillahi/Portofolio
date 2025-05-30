@@ -1,14 +1,14 @@
-const hm = document.getElementById('hm'); 
-const about = document.querySelectorAll('#changeAbout'); 
-const edu = document.querySelectorAll('#changeEdu'); 
-const skil = document.querySelectorAll('#changeSkil'); 
-const pro = document.querySelectorAll('#changePro'); 
-const hub = document.querySelectorAll('#changeHub'); 
+const hm = document.getElementById('hm');
+const about = document.querySelectorAll('#changeAbout');
+const edu = document.querySelectorAll('#changeEdu');
+const skil = document.querySelectorAll('#changeSkil');
+const pro = document.querySelectorAll('#changePro');
+const hub = document.querySelectorAll('#changeHub');
 
-const desk = document.getElementById('desk'); 
-const jur = document.getElementById('changejur'); 
-const gpa = document.getElementById('changegpa'); 
-const footer = document.getElementById('footer'); 
+const desk = document.getElementById('desk');
+const jur = document.getElementById('changejur');
+const gpa = document.getElementById('changegpa');
+const footer = document.getElementById('footer');
 
 
 const head = document.querySelectorAll('#proHead');
@@ -46,7 +46,7 @@ let lang = {
     hub: "Contact Me",
     jur: "informatics engineering",
     gpa: "GPA",
-    desk: "A Bachelor's graduate in Informatics Engineering from Universitas Pasundan. Possesses strong communication skills, the ability to work well in a team, understanding of programming logic. Proficient in the fundamentals of programming languages and frameworks. Persistent, solution-oriented, and enthusiastic about learning new things.",
+    desk: "A graduate with a Bachelor's degree in Informatics from Universitas Pasundan, possessing strong communication skills, the ability to work well in a team, a solid understanding of programming logic, a passion for challenges, a love for learning new things, and a constant drive to find solutions to problems.",
     footer: "This Website portfolio made by Dik Dik Nur Illahi Using framework Bootstrap"
   }
 }
@@ -66,37 +66,37 @@ function handleSelectChange(event) {
     "Website Penggajian PT Wahana Baja Gemilang",
     "Website Profil Esport"
   ];
-  
+
   const idBody = [
     "Website Blog Post ini dibangun menggunakan framework Laravel dan Tailwind. Website ini merupakan salah satu tugas kuliah yang saya buat untuk memenuhi tugas mata kuliah Praktikum Pemrograman",
     "Website Penggajian ini dibangun menggunakan framework Laravel dan Tailwind. Website ini merupakan Tugas Akhir saya, website ini menghitung jam kerja karyawan dan melakukan perhitungan gaji dengan cara memasukan jam masuk dan pulang karyawan.",
     "Website ini dibangun menggunakan framework Bootstrap. Website ini merupakan salah satu tugas kuliah saya."
   ];
-  
+
   const enHead = [
     "Vakantie Tourism Blog Post",
     "Payroll Website for PT Wahana Baja Gemilang",
     "Esports Profile Website"
   ];
-    
+
   const enBody = [
-  "This blog post website was built using the Laravel and Tailwind frameworks. It is one of the college assignments I created for the Programming Practicum course.",
-  "This payroll website was built using the Laravel and Tailwind frameworks. It is my final project. The website calculates employee working hours and processes payroll by inputting check-in and check-out times.",
-  "This website was built using the Bootstrap framework. It is one of my college assignments."
+    "This blog post website was built using the Laravel and Tailwind frameworks. It is one of the college assignments I created for the Programming Practicum course.",
+    "This payroll website was built using the Laravel and Tailwind frameworks. It is my final project. The website calculates employee working hours and processes payroll by inputting check-in and check-out times.",
+    "This website was built using the Bootstrap framework. It is one of my college assignments."
   ];
-  
+
   function Head(target, bahasa) {
-    for (let x in target){
+    for (let x in target) {
       const selecttarget = target[x];
       selecttarget.innerText = bahasa[x];
-  }
+    }
   }
 
   function Body(target, bahasa) {
-    for (let x in target){
+    for (let x in target) {
       const selecttarget = target[x];
       selecttarget.innerText = bahasa[x];
-  }
+    }
   }
 
   if (valueLang == 'id') {
@@ -123,15 +123,13 @@ function handleSelectChange(event) {
     ganti(skil, lang.en.skil);
     ganti(pro, lang.en.pro);
     ganti(hub, lang.en.hub);
-    
+
     Head(head, enHead);
     Body(body, enBody);
-    
+
     desk.innerText = lang.en.desk;
     jur.innerText = lang.en.jur;
     gpa.innerText = lang.en.gpa;
     footer.innerText = lang.en.footer;
   }
 }
-
-
